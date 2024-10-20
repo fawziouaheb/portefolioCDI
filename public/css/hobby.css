@@ -1,0 +1,62 @@
+
+.hobby {
+    padding: 50px;
+    width: 100;
+    margin: 0 auto;
+    box-sizing: border-box; 
+
+}
+.hobby h2 {
+    text-align: center;
+    margin-bottom: 15vh;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.activities{
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.activities .elements div{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: _3d_rotation 15s linear infinite;
+    margin: auto auto 50px;
+}
+
+.activities .elements div span{
+    counter-increment: activitiesCounter;
+    position: absolute;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 100deg)) translateZ(150px);
+
+}
+
+.activities .elements div img{
+    position: absolute;
+    object-fit: cover;
+}
+
+.activities .elements div img,
+.activities .elements div span
+{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+@keyframes _3d_rotation{
+    0% {
+        transform: perspective(700px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(700px) rotateY(360deg);
+    }
+}

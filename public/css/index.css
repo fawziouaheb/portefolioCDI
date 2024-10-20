@@ -1,0 +1,159 @@
+body{
+    background-color: #2E2C2C;
+}
+.ContainerProfile {
+    display: flex;
+    justify-content: space-between;
+    border : solid 1px red;
+    width: 100%;
+    height: 350px;
+}
+
+.ContainerProfileRight{
+    border: solid 1px blue !important;
+    width: 67%;
+    height: 100%;
+    background-color: #312E2E;  
+    position: relative;
+}
+.ContainerProfileLeft{
+    border: solid 1px yellow !important;
+    width: 45%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative ; /* position les contenueur enfant par rapport a leur div*/
+
+}
+
+.ContainerProfileLeft .imgProfile {
+    height: 150px;
+    width: auto;
+    border:  5px solid #141B42;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin:  auto;
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left: 69% !important;
+}
+
+.ContainerProfileLeft .imgBitmogie {
+    height: 66px;
+    width: auto;
+    background-color: #FFFFFF;
+    bottom: 0;
+    position: absolute;
+}
+.ContainerProfileNavbar{
+    position: absolute;
+    border: solid 1px green;
+    width: 70%;
+    margin-left: 30%;
+    justify-content: center;
+    display: flex;
+}
+
+.ContainerProfileNavbar li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.2s; 
+}
+
+.ContainerProfileNavbar li a:hover {
+    color: #141B42;
+}
+
+.ContainerProfileNavbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ContainerProfilePresentation {
+    position:  absolute;
+    width: 100%;
+    height: 60%;
+    border: solid 1px red;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ContainerProfilePresentation h2{
+    margin-left: 16%;
+    margin-top: 30px;
+    color : #141B42;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ContainerProfilePresentation h3{
+    margin-left: 25%;
+}
+
+.ContainerProfilePresentation p{
+    margin-left: 20%;
+}
+.ContainerProfileSocial {
+    position: relative;
+    border: solid 1px yellow;
+    width: 100%;
+    height: 20%;
+    top: 100%;
+    transform: translateY(-100%);
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+@media screen and (max-width: 1100px) {
+
+
+}
+
+.btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    margin-right: 10px;
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+
+
+  
+  

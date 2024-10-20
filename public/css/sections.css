@@ -1,0 +1,320 @@
+
+/** début parti css pour la section expérience pro*/
+.Container-Experience {
+    /*border: solid 3px rgb(84, 179, 46); */
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.line-experience {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    width: 10px;
+    height: 80%;
+    margin: 0 auto;
+    border-radius: 3px;
+}   
+.round-exp1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #141B42;
+    transform: translate(-50%, -15%);
+    left: 50%;
+    top: 15%;
+}
+.round-exp2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #141B42;
+    transform: translate(-50%, -85%);
+    left: 50%;
+    top: 70%;
+}
+
+.text-experience-1 {
+    position: absolute;
+    top: 28%;
+    left: 53%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 40%;
+    background-color: #1E1E1E;
+    border-radius: 3%;
+} 
+.title-experience-1 {
+    position: absolute;
+    top: 19%;
+    left: 53%;
+    font-size: 1.55vw;
+    color: white;
+}
+.title-experience-2 {
+    position: absolute;
+    top: 60.5%;
+    left: 53%;
+    font-size: 1.55vw;
+    color: white;
+}
+.text-experience-2 {
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    color: white;
+    height: 200px;
+    width: 40%;
+    background-color: #1E1E1E;
+    border-radius: 3%;
+} 
+.img-experience-1 {
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    height: 12vh;
+    width: auto;
+    transform:translate(-100%, -20%);
+}
+.img-experience-2 {
+    position: absolute;
+    top: 63%;
+    left: 47%;
+    height: 5vh;
+    width: auto;
+    transform:translate(-100%, -10%);
+    border-radius: 15%;        
+}
+.text-experience-2 p {
+    font-size: 1rem;
+    padding-left: 3vw; /* Ajoute un peu d'espace avant chaque phrase */
+    text-indent: -10px; /* Indente la première ligne vers la gauche */
+    margin-bottom: 1.5vh; /* Ajoute de l'espace entre les phrases */
+}
+.bullet-point {
+    margin-right: 0.7vw;
+    font-size: 1.5em; /* Taille du point */
+    color: white; /* Couleur du point */
+    width: 1em;
+}
+
+/** fin partie css pour la section expérience pro*/
+
+/** début partie css pour la section compétences*/
+.skills {
+    padding: 50px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 7vh;
+    font-size: 2em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.skills-container {
+    /*border: solid 3px rgb(14, 57, 211);*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.skills-section {
+    flex: 1 1 calc(50% - 40px); 
+    min-height: 200px;
+    background: #1E1E1E;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-with-progress {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Aligne verticalement la barre et le texte au centre */
+    gap: 20px;
+
+}
+
+
+.progress-bar {
+    background-color: #2E2C2C;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    flex-grow: 1; /* Permet à la barre de prendre tout l'espace disponible */
+}
+
+.progress {
+    background-color:  rgb(53, 195, 103); 
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    width: 0%;
+    transition: width 2s ease-out;
+}
+
+.skill-with-progress p {
+    margin: 0; /* Enlève la marge par défaut du <p> */
+    font-size: 1em;
+    color: white;
+    line-height: 3.5;
+}
+/** fin partie css pour la section compétences*/
+/** début partie css pour la section formation */
+.formation {
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    /*border:solid 2px red;*/ 
+}   
+.formation-container {
+   /* border: solid 2px blue;*/    
+    padding: 20px;
+}
+.formation h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.formation-section {
+    max-width: 80%; /* Ajuste la largeur maximale si nécessaire */
+    margin: 0 auto; /* Centre chaque section horizontalement */
+    /*border: solid 2px rgb(53, 195, 103); */    
+    display: flex;
+    align-items: center; /* Aligne verticalement les enfants au centre */
+    gap: 3vw; /* Espace entre les enfants */
+    flex-wrap: wrap; /* Permet aux enfants de se renvoyer à la ligne si nécessaire */
+    margin-bottom: 3.5vh;
+    padding: 3px; /* Ajoute un peu d'espace intérieur au conteneur, si nécessaire */
+}
+
+.formation-date {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3px; 
+}
+.formation-text-text{
+    color: white;
+    font-size: 18px;
+    margin-top: 0; /* Réduit l'espace au-dessus du paragraphe */
+    margin-bottom: 25px; /* Ajuste l'espace en dessous du paragraphe */ 
+}
+
+.formation-logo {
+    margin-left: 30px;
+    height: 15vh;
+    width: auto;
+    border: 2px solid #FFFF;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #141B42;
+}
+
+/* fin partie css pour la partie  formations et certification*/
+/* début partie css pour la partie projet scolaire */
+
+
+
+
+/* Media query pour petits écrans */
+@media (max-width: 768px) {
+    .formation {
+        box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+        position: relative;
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+       /* border:solid 2px red;*/ 
+    }  
+    .img-experience-2 {
+        position: absolute;
+        top: 63%;
+        left: 43%;
+        height: 3.5vh;
+        width: auto;
+        transform:translate(-100%, -10%);
+    }
+    .img-experience-1 {
+        position: absolute;
+        top: 20%;
+        left: 47%;
+        height: 9vh;
+        width: auto;
+        transform:translate(-100%, -20%);
+    }
+    .title-experience-1 {
+        position: absolute;
+        top: 19%;
+        left: 58%;
+        font-size: 4vw;
+        color: white;
+    }
+    .title-experience-2 {
+        position: absolute;
+        top: 60.5%;
+        left: 58%;
+        font-size: 4vw;
+        color: white;
+    }
+    .text-experience-2 p {
+        font-size: 0.7rem;
+        padding-left: 3vw; /* Ajoute un peu d'espace avant chaque phrase */
+        text-indent: -10px; /* Indente la première ligne vers la gauche */
+        margin-bottom: 1.5vh; /* Ajoute de l'espace entre les phrases */
+    }
+    .bullet-point {
+        margin-right: 0.7vw;
+        font-size: 1em; /* Taille du point */
+        color: black; /* Couleur du point */
+        width: 1em;
+    }
+    .skills-container {
+        flex-direction: column; /* Afficher les sections en colonne */
+    }
+    .skills {
+        padding: 18px;
+        margin: 0 auto;
+    }
+    .formation-section {
+        max-width: 90%; /* Ajuste la largeur maximale si nécessaire */
+        margin: 0 auto; /* Centre chaque section horizontalement */
+        /*border: solid 2px rgb(53, 195, 103); */    
+        display: flex;
+        align-items: center; /* Aligne verticalement les enfants au centre */
+        gap: 3vw; /* Espace entre les enfants */
+        flex-wrap: wrap; /* Permet aux enfants de se renvoyer à la ligne si nécessaire */
+        margin-bottom: 1vh;
+        padding: 1px; /* Ajoute un peu d'espace intérieur au conteneur, si nécessaire */
+    }
+    .formation-logo {
+        margin-top: 3vh;
+        left: 50%;
+        position: relative;
+        transform: translate(-80%,-0%);
+        height: 12vh;
+        width: auto;
+        border: 2px solid #FFFF;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #141B42;
+    }
+
+    
+}
+

@@ -1,0 +1,190 @@
+body {
+    background-color: #2E2C2C;
+}
+
+html {
+    scroll-behavior: smooth; /* Active le défilement fluide pour les ancres */
+}
+/* Style général du conteneur profile */
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Espacement entre l'image et le texte */
+    position: relative;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+}
+
+
+
+.background-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px; /* Taille de l'icône */
+    color: aliceblue; /* Couleur de l'icône */
+    transition: color 0.3s ease; /* Transition douce pour la couleur de l'icône */
+}
+
+.background-toggle:hover {
+    color:  #141B42; /* Couleur de l'icône au survol */
+}
+/* Style de l'image de profil */
+.imgProfile {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    border: 8px solid #141B42;
+    padding: 15px;
+}
+
+/* Style du texte de présentation */
+.presentation {
+    flex: 1;
+    overflow: hidden; /* Cache le texte qui dépasse */
+    position: relative;
+    white-space: nowrap; /* Empêche le texte de se mettre à la ligne pendant l'animation */
+}
+
+/* Le texte de présentation avec animation de saisie */
+.presentation p {
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    font-size: 22px;
+    color: aliceblue;
+    display: inline-block;
+    border-right: .15em solid #141B42; /* Barre de curseur */
+    animation: typing 4s steps(30, end) 1s 1 normal both, blink-caret .75s step-end 1s forwards;
+    white-space: nowrap; /* Permet au texte de passer à la ligne lorsqu'il dépasse */
+}
+
+/* Animation de saisie */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Animation du curseur */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: transparent; }
+}
+
+/* Style de la barre de navigation pour les écrans plus grands */
+.navbar-m {
+    position: absolute;
+    top: 0%;
+    right: 3%;
+    margin: 20px;
+}
+
+.navbar-m ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-m ul li {
+    margin-left: 3rem;
+}
+
+.navbar-m ul li a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-m ul li a:hover {
+    color: #141B42;
+}
+
+/* Style du menu hamburger pour les petits écrans */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centre le texte sous l'image */
+    }
+
+    .imgProfile {
+        height: 150px; /* Ajuste la taille de l'image pour les petits écrans */
+    }
+
+    .navbar-m {
+        position: static;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar-m ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-m ul.active {
+        display: flex;
+    }
+
+    .navbar-m ul li {
+        margin: 10px 0;
+    }
+
+    .navbar-m ul li a {
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Animation pour la transformation en croix du menu hamburger */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .presentation p {
+        font-size: 20px;
+        color: aliceblue;
+        display: inline-block;
+        border-right: .15em solid #141B42; /* Barre de curseur */
+        animation: typing 4s steps(30, end) 1s 1 normal both, blink-caret .75s step-end 1s forwards;
+        white-space: pre-wrap; /* Permet au texte de passer à la ligne lorsqu'il dépasse */
+    }
+}

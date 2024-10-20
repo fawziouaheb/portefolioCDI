@@ -1,0 +1,49 @@
+.container-about {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-about h2 {
+    text-align: center;
+}
+
+.section-propos {
+    margin: 0 auto;
+    width: 60%;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    justify-content: space-between; /* Espace entre les colonnes */
+    padding: 20px; /* Ajuste le padding si nécessaire */
+}
+
+.propos-column {
+    width: 45%; /* Chaque colonne prend environ 45% de la largeur */
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.flech {
+    color: rgb(35, 117, 172); /* Juste un exemple de couleur pour la flèche */
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .section-propos {
+        margin: 0 auto;
+        width: 90%;
+        background-color: rgb(34, 33, 33);
+        display: flex;
+        justify-content: space-between; /* Espace entre les colonnes */
+        padding: 20px; /* Ajuste le padding si nécessaire */
+    }
+    .propos-column p{
+        font-size: 10px ;
+    }
+}
