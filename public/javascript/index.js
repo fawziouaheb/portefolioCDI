@@ -316,7 +316,7 @@
           if (isGradient) {
               document.body.style.background = '#2E2C2C'; // Couleur unie
           } else {
-              document.body.style.background = 'linear-gradient(to left, #c6ffdd, #fbd786, #f7797d)'; // Dégradé
+              document.body.style.background = '#141B42'; // Dégradé
           }
           isGradient = !isGradient; // Basculer l'état
       });
