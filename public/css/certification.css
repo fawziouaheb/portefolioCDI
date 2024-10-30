@@ -1,0 +1,65 @@
+.certifications-section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.certifications-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certification-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.certifications-header {
+    text-align: center;
+    margin-bottom: 7vh;
+    font-size: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.certification-card {
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.certification-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.certification-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: white;
+}
+
+.certification-institution {
+    color: #dcdcdc;
+    margin-bottom: 10px;
+}
+
+.certification-details {
+    font-size: 0.9em;
+    color: #dcdcdc;
+    line-height: 1.5;
+}
+
+.certification-icon {
+    font-size: 1em;
+    margin-right: 5px;
+}
