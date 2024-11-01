@@ -104,12 +104,12 @@ html {
 
 /* Style du menu hamburger pour les petits écrans */
 .hamburger {
-    display: none;
+    display: flex; /* Mets le display en "flex" pour le voir à l'écran */
     flex-direction: column;
     cursor: pointer;
-    margin-left: auto;
+    position: absolute;
+    left: 0; /* Aligne le hamburger à gauche */
 }
-
 .hamburger span {
     width: 25px;
     height: 3px;
