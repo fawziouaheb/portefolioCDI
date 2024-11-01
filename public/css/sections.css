@@ -254,7 +254,7 @@
         position: absolute;
         top: 20%;
         left: 47%;
-        height: 9vh;
+        height: 3.5vh;
         width: auto;
         transform:translate(-100%, -20%);
     }
@@ -262,17 +262,23 @@
         position: absolute;
         top: 19%;
         left: 58%;
-        font-size: 4vw;
+        font-size: 2.7vw;
         color: white;
     }
     .title-experience-2 {
         position: absolute;
         top: 60.5%;
         left: 58%;
-        font-size: 4vw;
+        font-size: 2.7vw;
         color: white;
     }
     .text-experience-2 p {
+        font-size: 0.7rem;
+        padding-left: 3vw; /* Ajoute un peu d'espace avant chaque phrase */
+        text-indent: -10px; /* Indente la première ligne vers la gauche */
+        margin-bottom: 1.5vh; /* Ajoute de l'espace entre les phrases */
+    }
+    .text-experience-1 p {
         font-size: 0.7rem;
         padding-left: 3vw; /* Ajoute un peu d'espace avant chaque phrase */
         text-indent: -10px; /* Indente la première ligne vers la gauche */
