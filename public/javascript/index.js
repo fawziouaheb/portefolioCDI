@@ -325,7 +325,7 @@
 document.querySelector('.button').onclick = function(){
     console.log("je clique");
   const a = document.createElement('a')
-  url = 'public/cv.pdf';
+  url = 'public/Fawzi OUAHEB.pdf';
   a.href = url;
   a.download = url.split('/').pop()
   document.body.appendChild(a)
