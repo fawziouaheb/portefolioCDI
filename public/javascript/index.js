@@ -324,7 +324,7 @@ x
 
 
 document.querySelector('.button').onclick = function(){
-
+    console.log("je clique");
   const a = document.createElement('a')
   url = 'public/cv.pdf';
   a.href = url;
