@@ -1,4 +1,3 @@
-
     document.addEventListener('scroll', function() {
 
         var progressVmware = document.getElementById('progress-vmware').querySelector('.progress');
