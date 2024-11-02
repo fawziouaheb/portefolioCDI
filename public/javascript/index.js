@@ -1,4 +1,4 @@
-
+x
     document.addEventListener('scroll', function() {
 
         var progressVmware = document.getElementById('progress-vmware').querySelector('.progress');
@@ -321,4 +321,17 @@
           isGradient = !isGradient; // Basculer l'état
       });
   });
+
+
+document.querySelector('.button').onclick = function(){
+
+  const a = document.createElement('a')
+  url = 'public/cv.pdf';
+  a.href = url;
+  a.download = url.split('/').pop()
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+}
+
 
