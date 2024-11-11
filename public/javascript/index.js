@@ -313,9 +313,9 @@
   
       toggleIcon.addEventListener('click', function() {
           if (isGradient) {
-              document.body.style.background = '#2E2C2C'; // Couleur unie
+              document.body.style.background = '#141B42'; // Couleur unie
           } else {
-              document.body.style.background = '#141B42'; // Dégradé
+              document.body.style.background = '#2E2C2C'; // Dégradé
           }
           isGradient = !isGradient; // Basculer l'état
       });
