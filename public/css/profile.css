@@ -126,12 +126,13 @@ html {
   --tooltip-height: 35px;
   --tooltip-width: 90px;
   --gap-between-tooltip-to-button: 18px;
-  --button-color: #1163ff;
+  --button-color: #D1D1D1;
   --tooltip-color: #fff;
   width: var(--width);
   height: var(--height);
   background: var(--button-color);
-  position: relative;
+  position: absolute; /* Position absolue par rapport au parent */
+  right: 3%; /* Décalage à droite */
   text-align: center;
   border-radius: 0.45em;
   font-family: "Arial";
