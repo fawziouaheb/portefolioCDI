@@ -2,6 +2,11 @@ body {
     background-color: #141B42;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth; /* Active le défilement fluide pour les ancres */
 }
@@ -14,8 +19,6 @@ html {
     position: relative;
     flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
 }
-
-
 
 .background-toggle {
     position: absolute;
@@ -58,6 +61,47 @@ html {
     animation: typing 4s steps(30, end) 1s 1 normal both, blink-caret .75s step-end 1s forwards;
     white-space: nowrap; /* Permet au texte de passer à la ligne lorsqu'il dépasse */
 }
+
+/* Style pour le conteneur des icônes */
+.social-links-linkedln {
+  position: fixed;
+  top: 50%; /* Centré verticalement */
+  right: 3%; /* Positionné à droite */
+}
+
+/* Style des icônes */
+.social-links-linkedln .icon {
+  width: 2.5vw;
+  height: auto; 
+  transition: transform 0.3s ease;
+  display: block; /* S'assure que l'image ne provoque pas de chevauchement */
+}
+
+/* Effet au survol */
+.social-links-linkedln .icon:hover {
+  transform: scale(1.2); /* Agrandissement de l'icône au survol */
+}
+
+
+.social-links-git {
+  position: fixed;
+  top: 57%; /* Centré verticalement */
+  right: 3%; /* Positionné à droite */
+}
+
+/* Style des icônes */
+.social-links-git .icon {
+  width: 2.5vw;
+  height: auto; 
+  transition: transform 0.3s ease;
+  display: block; /* S'assure que l'image ne provoque pas de chevauchement */
+}
+
+/* Effet au survol */
+.social-links-git .icon:hover {
+  transform: scale(1.2); /* Agrandissement de l'icône au survol */
+}
+
 
 /* Animation de saisie */
 @keyframes typing {
@@ -299,4 +343,49 @@ html {
         animation: typing 4s steps(30, end) 1s 1 normal both, blink-caret .75s step-end 1s forwards;
         white-space: pre-wrap; /* Permet au texte de passer à la ligne lorsqu'il dépasse */
     }
+
+    /* Style pour le conteneur des icônes */
+    .social-links-git {
+      position: fixed;
+      top: 35%; /* Centré verticalement */
+      right: 6.5%; /* Positionné à droite */
+      transform: translate(-50%, -50%); /* Ajustement pour un centrage parfait */
+      display: flex; /* Organisation en ligne */
+      flex-direction: row; /* Assure une disposition horizontale */
+      gap: 20px; /* Espacement entre les icônes */
+      z-index: 1000; /* Toujours visible au-dessus */
+    }
+
+    /* Style des icônes */
+    .social-links-git .icon {
+      width: 6.5vw;
+      height: auto; 
+      transition: transform 0.3s ease;
+      display: block; /* S'assure que l'image ne provoque pas de chevauchement */
+    }
+
+
+
+
+    .social-links-linkedln {
+      position: fixed;
+      top: 31%; /* Centré verticalement */
+      right: 6.5%; /* Positionné à droite */
+      transform: translate(-50%, -50%); /* Ajustement pour un centrage parfait */
+      display: flex; /* Organisation en ligne */
+      flex-direction: row; /* Assure une disposition horizontale */
+      gap: 20px; /* Espacement entre les icônes */
+      z-index: 1000; /* Toujours visible au-dessus */
+    }
+
+    /* Style des icônes */
+    .social-links-linkedln .icon {
+      width: 6.5vw;
+      height: auto; 
+      transition: transform 0.3s ease;
+      display: block; /* S'assure que l'image ne provoque pas de chevauchement */
+    }
+
+
+  
 }
