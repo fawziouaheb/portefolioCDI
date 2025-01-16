@@ -120,6 +120,34 @@
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+.skills-list {
+    list-style-type: none; /* Supprime les puces classiques */
+    padding: 0; /* Retire les marges internes */
+    margin: 0;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em; /* Espace entre les lignes */
+}
+
+.skills-list li {
+    margin-bottom: 10px; /* Ajoute de l'espace entre les éléments */
+    padding: 10px;
+    background: #2C2C2C;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skills-list li i {
+    color: #4CAF50; /* Couleur des icônes */
+    margin-right: 10px;
+}
+
+
+.skills-list li:hover {
+    background: #333333; /* Change de couleur au survol */
+    transform: scale(1.02); /* Effet léger d'agrandissement */
+    transition: all 0.2s ease-in-out;
+}
 
 .skills-container {
     /*border: solid 3px rgb(14, 57, 211);*/
