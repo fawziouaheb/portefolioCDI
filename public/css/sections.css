@@ -218,6 +218,14 @@
 }
 /** fin partie css pour la section compétences*/
 /** début partie css pour la section formation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .formation {
     box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
     position: relative;
@@ -245,6 +253,8 @@
     flex-wrap: wrap; /* Permet aux enfants de se renvoyer à la ligne si nécessaire */
     margin-bottom: 3.5vh;
     padding: 3px; /* Ajoute un peu d'espace intérieur au conteneur, si nécessaire */
+    opacity: 0;
+    transition: opacity 1s ease-out;
 }
 
 .formation-date {
@@ -254,6 +264,11 @@
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 3px; 
+}
+/* Classe show pour activer l'animation */
+.formation-section.show {
+    opacity: 1;
+    animation: fadeIn 1s ease-out forwards;
 }
 .formation-text-text{
     color: white;
@@ -344,6 +359,8 @@
         margin: 0 auto;
     }
     .formation-section {
+        opacity: 0;
+        transition: opacity 1s ease-out;
         max-width: 90%; /* Ajuste la largeur maximale si nécessaire */
         margin: 0 auto; /* Centre chaque section horizontalement */
         /*border: solid 2px rgb(53, 195, 103); */    

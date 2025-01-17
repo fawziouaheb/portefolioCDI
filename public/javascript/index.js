@@ -337,8 +337,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const groupes = document.querySelectorAll(".competence-groupe");
   const skillsItems = document.querySelectorAll(".skills-list li");
   const certificationCards = document.querySelectorAll(".certification-card");
+  const formationSections = document.querySelectorAll(".formation-section"); // Sections des formations
 
-  // Fonction pour vérifier le scroll et appliquer l'animation
   function checkScroll() {
       // Animation pour les groupes de compétences
       groupes.forEach((groupe) => {
@@ -358,13 +358,21 @@ document.addEventListener("DOMContentLoaded", function () {
           }
       });
 
-      // Animation pour les cartes de certification (fade-in-up)
+      // Animation pour les cartes de certification
       certificationCards.forEach((card, index) => {
           const rect = card.getBoundingClientRect();
           if (rect.top < window.innerHeight - 50) {
               setTimeout(() => {
                   card.classList.add("show");
               }, index * 200); // Effet progressif
+          }
+      });
+
+      // Animation pour les sections de formation
+      formationSections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+              section.classList.add("show");
           }
       });
   }
@@ -375,4 +383,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // Vérifier immédiatement au chargement
   checkScroll();
 });
+
 
