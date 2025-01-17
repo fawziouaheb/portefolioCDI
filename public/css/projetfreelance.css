@@ -1,0 +1,69 @@
+/* Section globale */
+.projetfreelance {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetfreelance h2 {
+    text-align: center;
+    margin-bottom: 7vh;
+    font-size: 2em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Liste des projets */
+.projetfreelance-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptatif */
+    gap: 20px;
+}
+
+/* Style individuel d'un projet */
+.projetfreelance-item {
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projetfreelance-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre du projet */
+.projetfreelance-item h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Client et description */
+.projetfreelance-item p {
+    margin: 10px 0;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.projetfreelance-item p span {
+    font-weight: bold;
+    color: #FF9800;
+}
+
+/* Lien vers le site */
+.projetfreelance-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.projetfreelance-link:hover {
+    color: #76FF03;
+}
