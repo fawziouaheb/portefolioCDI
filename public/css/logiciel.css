@@ -40,3 +40,44 @@
 .competence:hover {
     background-color: #444;
 }
+.competence-groupe {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.competence-groupe h3 {
+    color: #ffffff;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+.competence-groupe.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Animation de montée et d'opacité */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Classe active pour déclencher l'animation */
+.competence-groupe.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -333,4 +333,46 @@ document.querySelector('.button').onclick = function(){
   document.body.removeChild(a)
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const groupes = document.querySelectorAll(".competence-groupe");
+  const skillsItems = document.querySelectorAll(".skills-list li");
+  const certificationCards = document.querySelectorAll(".certification-card");
+
+  // Fonction pour vérifier le scroll et appliquer l'animation
+  function checkScroll() {
+      // Animation pour les groupes de compétences
+      groupes.forEach((groupe) => {
+          const rect = groupe.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+              groupe.classList.add("show");
+          }
+      });
+
+      // Animation pour la liste des compétences générales
+      skillsItems.forEach((item, index) => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+              setTimeout(() => {
+                  item.classList.add("show");
+              }, index * 200); // Décalage progressif
+          }
+      });
+
+      // Animation pour les cartes de certification (fade-in-up)
+      certificationCards.forEach((card, index) => {
+          const rect = card.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 50) {
+              setTimeout(() => {
+                  card.classList.add("show");
+              }, index * 200); // Effet progressif
+          }
+      });
+  }
+
+  // Vérifier au scroll
+  window.addEventListener("scroll", checkScroll);
+
+  // Vérifier immédiatement au chargement
+  checkScroll();
+});
 

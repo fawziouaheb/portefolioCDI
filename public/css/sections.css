@@ -130,12 +130,30 @@
     line-height: 1.8em; /* Espace entre les lignes */
 }
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .skills-list li {
     margin-bottom: 10px; /* Ajoute de l'espace entre les éléments */
     padding: 10px;
     background: #2C2C2C;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+/* Classe active pour déclencher l'animation */
+.skills-list li.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 .skills-list li i {
     color: #4CAF50; /* Couleur des icônes */
