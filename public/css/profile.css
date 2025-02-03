@@ -35,12 +35,21 @@ html {
 }
 /* Style de l'image de profil */
 .imgProfile {
-    height: 250px;
-    width: auto;
-    border-radius: 50%;
-    border: 8px solid #141B42;
-    padding: 15px;
+  border: 1px solid rgba(31, 111, 235, 1);
+  box-shadow: 0 0 60px rgba(31, 111, 235, 0.9); /* Halo plus large */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 20px; /* Ajoute de l'espace pour le halo */
 }
+
+.imgProfile:hover {
+  transform: scale(1.05); /* Effet zoom léger au survol */
+  box-shadow: 0 0 80px rgba(31, 111, 235, 1); /* Halo encore plus large au survol */
+}
+
 
 /* Style du texte de présentation */
 .presentation {
