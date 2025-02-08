@@ -290,6 +290,17 @@
     background-color: #141B42;
 }
 
+.text-experience-1 a {
+    color: #007bff; /* Bleu vif */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Met en gras */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Animation fluide */
+}
+
+.text-experience-1 a:hover {
+    color: #0056b3; /* Bleu plus foncé au survol */
+    text-decoration: underline; /* Souligne au survol */
+}
 /* fin partie css pour la partie  formations et certification*/
 /* début partie css pour la partie projet scolaire */
 
@@ -347,6 +358,17 @@
         padding-left: 3vw; /* Ajoute un peu d'espace avant chaque phrase */
         text-indent: -10px; /* Indente la première ligne vers la gauche */
         margin-bottom: 1.5vh; /* Ajoute de l'espace entre les phrases */
+    }
+    .text-experience-1 a {
+        color: #007bff; /* Bleu vif */
+        text-decoration: none; /* Supprime le soulignement */
+        font-weight: bold; /* Met en gras */
+        transition: color 0.3s ease, text-decoration 0.3s ease; /* Animation fluide */
+    }
+    
+    .text-experience-1 a:hover {
+        color: #0056b3; /* Bleu plus foncé au survol */
+        text-decoration: underline; /* Souligne au survol */
     }
     .bullet-point {
         margin-right: 0.7vw;
