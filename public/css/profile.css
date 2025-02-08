@@ -147,13 +147,34 @@ html {
     font-size: 18px;
     color: aliceblue;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px ;
     transition: background-color 0.3s ease;
 }
 
-.navbar-m ul li a:hover {
-    color: #141B42;
+.navbar-m ul li a {
+  text-decoration: none; /* Enlève le soulignement de base */
+  position: relative; /* Permet d'ajouter un soulignement personnalisé */
+  padding-bottom: 5px; /* Espace entre le texte et la ligne */
+  transition: color 0.3s ease-in-out;
 }
+
+.navbar-m ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: rgba(31, 111, 235, 1);
+  box-shadow: 0 4px 6px rgba(31, 111, 235, 0.5); /* Shadow de la même couleur */
+  transition: width 0.3s ease-in-out;
+}
+
+
+.navbar-m ul li a:hover::after {
+  width: 100%; /* Fait apparaître le soulignement */
+}
+
 
 /* Style du menu hamburger pour les petits écrans */
 .hamburger {

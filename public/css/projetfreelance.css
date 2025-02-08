@@ -37,7 +37,7 @@
 /* Titre du projet */
 .projetfreelance-item h3 {
     font-size: 1.5em;
-    color: #4CAF50;
+    color: rgba(31, 111, 235, 1);
     margin-bottom: 10px;
 }
 
@@ -58,12 +58,13 @@
 .projetfreelance-link {
     display: inline-block;
     margin-top: 15px;
-    color: #4CAF50;
+    color: rgba(31, 111, 235, 1);
+    box-shadow: 0 4px 6px rgba(31, 111, 235, 0.5);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .projetfreelance-link:hover {
-    color: #76FF03;
+    color: rgba(31, 111, 235, 1);
 }

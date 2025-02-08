@@ -10,12 +10,23 @@
         var progressJavascript = document.getElementById('progress-javascript').querySelector('.progress');
         var progressKalilinux = document.getElementById('progress-kali-linux').querySelector('.progress');
         var progressWindows = document.getElementById('progress-windows').querySelector('.progress');
-
+        var progressSpring = document.getElementById('progress-Spring').querySelector('.progress');
+        var progressAngular = document.getElementById('progress-Angular').querySelector('.progress');
+        var progressTCPIP = document.getElementById('progress-TCP-IP').querySelector('.progress');
+        var progressDHCPDNS = document.getElementById('progress-DHCP-DNS').querySelector('.progress');
+        var progressRoutage = document.getElementById('progress-Routage').querySelector('.progress');
+        
         var position = document.getElementById('progress-section').getBoundingClientRect().top;
 
         var screenPosition = window.innerHeight / 1.5;
 
         if (position < screenPosition) {
+
+            progressDHCPDNS.style.width = '50%'
+            progressTCPIP.style.width = '55%'
+            progressRoutage.style.width = '50%'
+            progressAngular.style.width = '50%'
+            progressSpring.style.width = '60%'
             progressWindows.style.width = '50%'
             progressKalilinux.style.width = '40%'
             progressJavascript.style.width = '50%'
@@ -28,6 +39,11 @@
             progressVmware.style.width = '70%'; // Remplissage pour VMWARE
         }
         else{
+            progressDHCPDNS.style.width = '0%'
+            progressTCPIP.style.width = '0%'
+            progressRoutage.style.width = '0%'
+            progressSpring.style.width = '0%'
+            progressAngular.style.width = '0%';
             progressWindows.style.width = '0%'
             progressKalilinux.style.width = '0%';
             progressJavascript.style.width = '0%';
