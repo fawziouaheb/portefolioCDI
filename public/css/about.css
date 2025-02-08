@@ -14,6 +14,8 @@
 .section-propos {
     margin: 0 auto;
     width: 60%;
+    border: 1px solid rgba(31, 111, 235, 1);
+    box-shadow: 0 0 60px rgba(31, 111, 235, 0.9); /* Halo plus large */
     background-color: rgb(34, 33, 33);
     display: flex;
     justify-content: space-between; /* Espace entre les colonnes */
