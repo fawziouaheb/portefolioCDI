@@ -139,3 +139,77 @@ h3 {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iot-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #1E1E1E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+.iot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iot-logo {
+    height: 50px;
+}
+.iot-title {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0;
+    animation: slideIn 1s ease-in-out;
+}
+.iot-content {
+    line-height: 1.6;
+    color: white;
+}
+.iot-list {
+    padding: 0;
+}
+.iot-item {
+    list-style: none;
+    background: #2C2C2C;
+    box-shadow: 0 4px 6px rgba(31, 111, 235, 0.5);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+.iot-item:hover {
+    transform: scale(1.05);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
+@media (max-width: 600px) {
+    .iot-container {
+        padding: 15px;
+    }
+    .iot-header {
+        flex-direction: column;
+    }
+}
