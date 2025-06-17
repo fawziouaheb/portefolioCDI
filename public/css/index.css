@@ -16,6 +16,7 @@ body{
     background-color: #312E2E;  
     position: relative;
 }
+
 .ContainerProfileLeft{
     border: solid 1px yellow !important;
     width: 45%;

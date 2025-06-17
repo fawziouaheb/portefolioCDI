@@ -17,6 +17,11 @@
     margin: 0 auto;
     border-radius: 3px;
 }   
+.github-icon {
+  width: 20px;
+  filter: brightness(0) invert(1);
+}
+
 .round-exp1 {
     position: absolute;
     width: 30px;
